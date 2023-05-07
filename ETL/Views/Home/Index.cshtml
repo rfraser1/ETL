@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>ETL Demo for JBA Consulting</p>
+</div>
+
+<div class="col-4 offset-4">
+    <form method="post" action="/Home/UploadData" enctype="multipart/form-data">
+        <div class="m-3">
+            <label>Please upload a .pre data file. Warning - this could take a few moments.</label>
+        </div>
+        <div class="m-3">
+            <input name="prefile" id="prefile" type="file" class="form-control" />
+        </div>
+        <div class="m-3">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </div>        
+    </form>
+</div>
